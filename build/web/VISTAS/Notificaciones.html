@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="#" />
+    <title>Tutorial DataTables</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="../ESTILOS/EstilosMensajeria.css">
+    <link rel="stylesheet" href="../ESTILOS/Estiloreloj.css">
+
+    <!--datables CSS básico-->
+    <link rel="stylesheet" type="text/css" href="datatables/datatables.min.css" />
+    <!--datables estilo bootstrap 4 CSS-->
+    <link rel="stylesheet" type="text/css" href="datatables/DataTables-1.10.18/css/dataTables.bootstrap4.min.css">
+
+    <!--font awesome con CDN-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <div> TREN: </div>
+        <div class="tiempo" id="clock"></div>
+    </header>
+    <main class="grid-container">
+        <div class="header">
+            <div>CARRERA</div>
+            <div>ID</div>
+            <div class="button">
+
+                <button>
+                    <span class="text">Button</span>
+                </button>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="header-table">
+                <div class="logo-table"><i class="fa-solid fa-train-subway fa-beat"></i></div>
+                <div class="logo-table"><i class="fa-regular fa-clock fa-beat"></i></div>
+                <div class="logo-table"><i class="fa-regular fa-clock fa-beat"></i></div>
+            </div>
+            <!--tabla con DataTables-->
+            <div class="row">
+                <div class="col-lg-12">
+                    <table id="tabla-paradas" class="display" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Name Station</th>
+                                <th>Date</th>
+                                <th>Start date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+                            <tr>
+                                <td>Tiger Nixon</td>
+                                <td>30/06/2023</td>
+                                <td>2011-04-25</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="header-notificaciones">
+                <i class="fa-solid fa-bell fa-bounce"></i>
+                <p>Notificaciones</p>
+            </div>
+            <div class="body-notificaciones">
+                <table id="tabla-mensajes" class="table table-striped" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>FECHA</th>
+                            <th>MENSAJE</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>30/06/2023</td>
+                            <td>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae tempore vitae illum praesentium, rem in. Commodi rem quo temporibus blanditiis sed. Quia magnam doloremque deleniti itaque possimus suscipit ducimus asperiores!
+                                Consequuntur numquam nesciunt sed obcaecati est quod debitis! Illum expedita quibusdam, est aut nemo maiores voluptatibus eaque eligendi quas culpa dolores. Earum sapiente dolores fugit quos fuga dolore corporis corrupti.
+                                </p>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div>BIENVENIDO VMA</div>
+        <div class="logo"></div>
+    </footer>
+
+    <!-- jQuery, Popper.js, Bootstrap JS -->
+    <script src="jquery/jquery-3.3.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- datatables JS -->
+    <script type="text/javascript" src="datatables/datatables.min.js"></script>
+
+    <!-- para usar botones en datatables JS -->
+    <script src="datatables/Buttons-1.5.6/js/dataTables.buttons.min.js"></script>
+    <script src="datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="datatables/pdfmake-0.1.36/pdfmake.min.js"></script>
+    <script src="datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="datatables/Buttons-1.5.6/js/buttons.html5.min.js"></script>
+
+    <!-- código JS propìo-->
+    <script type="text/javascript" src="main.js"></script>
+    <script src="../FUNCIONES/funcion-reloj.js"></script>
+    <!-- ICONS: Font Awesome -->
+    <script src="https://kit.fontawesome.com/075922b03a.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
